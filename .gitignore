@@ -1,7 +1,0 @@
-server/node_modules
-server/package-lock.json
-server/dist
-server/.env
-server/.env.local
-server/.vscode
-.qodo
