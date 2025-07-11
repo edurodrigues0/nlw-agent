@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Card, CardContent, CardDescription } from "./ui/card";
+import { Card, CardContent, CardDescription, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { dayjs } from "@/utils/dayjs";
 import { useRooms } from "@/http/use-rooms";
@@ -10,9 +10,11 @@ export function RoomList() {
 
   return (
     <Card>
-      <CardDescription>
-        Acesso rápido para as salas criadas recentemente
-      </CardDescription>
+      <CardHeader>
+        <CardDescription>
+          Acesso rápido para as salas criadas recentemente
+        </CardDescription>
+      </CardHeader>
       <CardContent className="flex flex-col gap-3">
         {isLoading && (
           <p className="text-muted-foreground text-sm">Carregando...</p>
