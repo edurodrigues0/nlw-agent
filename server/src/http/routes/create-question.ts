@@ -1,5 +1,4 @@
 import type { FastifyPluginCallbackZod } from "fastify-type-provider-zod";
-import { desc, eq } from "drizzle-orm";
 import { db } from "../../db/connection.ts";
 import { schema } from "../../db/schema/index.ts";
 import { z } from "zod/v4";
